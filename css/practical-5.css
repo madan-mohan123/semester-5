@@ -1,0 +1,16 @@
+body{
+    height: 100ev;
+    background-color: slategray;
+}
+img{
+    display: block;
+    margin: auto;
+}
+.para{
+    background-color: rgb(80, 77, 77);
+     margin-top: 20px; 
+}
+.para p{
+    padding: 10px 15px;
+    color: whitesmoke;
+}
