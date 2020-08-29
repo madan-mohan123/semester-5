@@ -12,30 +12,29 @@
     margin:0;
     box-sizing: border-box;
 }
+@media(min-width: 700px){
 .footer{
          
-         width: 100%;
-         position: fixed;
-         bottom: 0;
+         position: relative;
+         top:100px;
          background-color: #2f3640;
          padding:5px 20px;
          padding-top:40px;
-         min-width: 400px;
+       
      }
-     
-@media (min-width: 769px){
-   
-    .mycontent{
+.mycontent{
       width: 100%;
-      height: 220px;
+     
+     padding-bottom:20px;
       border-bottom:2px solid rgba(255,255,255,0.1);
   }
       .mycontent .about{
           float: left;
-          height: 200px;
+        
           width: 27%;
           margin-right: 50px;
-          overflow: hidden;
+         
+         
       }
       .mycontent  .about h2{
 color:white;
@@ -44,13 +43,14 @@ margin-bottom: 30px;
 
       }
       .mycontent .about p{
+          text-align: justify;
           color:white;
           opacity:0.5;
       }
       .mycontent .link{
           float: right;
           width: 21%;
-          height: 200px;
+          /* height: 200px; */
       }
       .mycontent .link p{
           color:white;
@@ -61,7 +61,7 @@ margin-bottom: 30px;
           list-style: none;
       }
       .mycontent .link ul li{
-          margin: 10px;
+          margin: 10px 5px;
       }
       .mycontent .link ul li a{
          color: white; 
@@ -165,19 +165,27 @@ padding:15px;
     .social .linked:hover{
         background-color:rgb(219, 186, 0)
     }
-
 }
- 
-      @media (max-width: 768px){
-        .mycontent{
+@media (max-width: 699px){
+    .footer{
+        position: relative;
+        top:100px;
+         background-color: #2f3640;
+         padding:5px 20px;
+         padding-top:40px;
+         min-width: 450px;
+        
+     }
+.mycontent{
       
       width: 100%;
-      height: 440px;
+      /* height: 440px; */
       border-bottom:2px solid rgba(255,255,255,0.1);
   }
         .mycontent .about{
             float: left;
-            height: 200px;
+            /* height: 200px; */
+            padding-bottom: 30px;
             width: 100%;
         }
         .mycontent  .about h2{
@@ -197,6 +205,7 @@ margin-bottom: 30px;
           height: 200px;
           margin-right: 10px;
           margin-left: 10px;
+          /* border:1px solid orange; */
       }
       .mycontent .link p{
           color:white;
@@ -207,7 +216,7 @@ margin-bottom: 30px;
           list-style: none;
       }
       .mycontent .link ul li{
-          margin: 10px;
+          margin: 10px 5px;
       }
       .mycontent .link ul li a{
          color: white; 
@@ -223,25 +232,28 @@ margin-bottom: 30px;
       .regis{
          width: 100%;
           margin-top: 50px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+         
       }
       .regis h1{
+          text-align: center;
           color: white;
-          margin-right: 20px;
+         
       }
       .regis a{
+          
+          display: block;
+          margin:auto;
+          margin-top: 20px;
+          text-align: center;
+          line-height: 26px;
           color: white; 
          text-decoration: none;
-         display: flex;
-         justify-content: center;
-          align-items: center;
          height: 30px;
-         width: 100px;
+         width: 150px;
          padding:5px;
          background-color: rgba(76, 113, 192, 0.747);
          border-radius: 15px;
+         font-size: 20px;
         
       }
       .regis a:hover{
@@ -259,38 +271,39 @@ margin-bottom: 30px;
           display: flex;
           justify-content: center;
           align-items: center;
+          padding-bottom: 40px;
       }
       .social i{
 color: white;
 font-size: 20px;
     }
     .social .face{
-        margin:20px;
+        margin-right:20px;
 padding:15px;
         border-radius: 100%;
         background-color: rgb(106, 106, 206);
     }
     .social .insta{
-        margin:20px;
+        margin-right:20px;
 padding:15px;
         border-radius: 100%;
         background-color: purple;
     }
     .social .twit{
-        margin:20px;
+        margin-right:20px;
 padding:15px;
         border-radius: 100%;
         background-color: skyblue;
 
     }
     .social .linked{
-        margin:20px;
+        margin-right:20px;
 padding:15px;
         border-radius: 100%;
         background-color: blueviolet;
     }
     .social .gmail{
-        margin:20px;
+        margin-right:20px;
 padding:15px;
         border-radius: 100%;
         background-color: red;
@@ -311,7 +324,10 @@ padding:15px;
     .social .linked:hover{
         background-color:rgb(219, 186, 0)
     }
-      }
+
+}
+
+      
 
     </style>
 </head>
