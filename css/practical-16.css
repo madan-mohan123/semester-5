@@ -5,6 +5,7 @@
   }
     body{
         background-image: linear-gradient(blue,black);
+        
         height: 100vh;
     }
 
@@ -34,7 +35,9 @@
       height: 30px;
       padding-left: 10px;
       line-height: 30px;
-      font-size: 15px;
+      font-size: 17px;
+      color: white;
+      font-family: sans-serif;
     }
     
     button.check-btn,button.delete-btn{
@@ -44,6 +47,7 @@
      border: none;
      background-color: rgb(113, 241, 113);
      outline: none;
+     transition: 0.4s;
    
     }
     button.delete-btn{
@@ -73,5 +77,8 @@
     .completed{
       text-decoration: line-through;
       opacity: 0.7;
+    }
+    button.check-btn:hover,button.delete-btn:hover{
+transform: scale(1.2);
     }
    

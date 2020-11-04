@@ -2,7 +2,7 @@
 var todoInput=document.querySelector(".todo-input");
 var todoButton=document.querySelector(".todo-button");
 var todoList=document.querySelector(".todo-list");
-
+var count=0;
 //event
 todoButton.onclick=create;
 todoList.onclick=checkdelete;
@@ -36,6 +36,32 @@ delbtn.innerHTML='<i class="fa fa-trash"></i>';
 newdiv.appendChild(delbtn);
 
 todoList.appendChild(newdiv);
+
+var body=document.body;
+
+count++;
+if(count==1){
+  body.style=" background-image: linear-gradient(rgb(17, 211, 33),rgb(1, 192, 240))";
+  newli.style="background-image: linear-gradient(rgb(255, 102, 0),rgb(226, 196, 26))";
+}
+else if(count==2){
+body.style=" background-image: linear-gradient(rgb(255, 102, 0),rgb(226, 196, 26))";
+newli.style="background-image: linear-gradient(rgb(17, 211, 33),rgb(1, 192, 240))";
+}
+else if(count==3){
+body.style=" background-image: linear-gradient(rgb(233, 12, 104),rgb(31, 165, 206))";
+newli.style="background-image: linear-gradient(rgb(159, 159, 214),rgb(228, 66, 66))";
+}
+else if(count==4){
+  body.style=" background-image: linear-gradient(rgb(159, 159, 214),rgb(228, 66, 66))";
+  newli.style="background-image: linear-gradient(rgb(233, 12, 104),rgb(31, 165, 206))";
+}
+else if(count==5){
+  body.style="background-image: linear-gradient(rgb(240, 205, 6),rgb(233, 24, 188),rgb(74, 241, 74));";
+  newli.style="background-image: linear-gradient(rgb(75, 75, 235),rgb(221, 167, 167))";
+  count=0;
+}
+
    }
 
 }
